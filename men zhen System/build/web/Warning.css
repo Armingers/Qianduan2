@@ -1,0 +1,14 @@
+.onepage{
+    height: 750px;
+
+}
+.onepage-bg{
+    height: 900px;
+    width:100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+}
+#onepage{
+    background-image: url("images/Login.png");
+}

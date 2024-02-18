@@ -1,0 +1,14 @@
+.onepage{
+    height: 140px;
+    
+}
+.onepage-bg{
+    height: 900px;
+    width:100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+}
+#onepage{
+    background-image: url("images/yaoku.jpg");
+}

@@ -1,0 +1,276 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+public final class YaoKu_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html; charset=gb2312");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<html lang=\"en\">\n");
+      out.write("<head>\n");
+      out.write("    <meta charset=\"UTF-8\">\n");
+      out.write("    <title>药库</title>\n");
+      out.write("    <link rel=\"stylesheet\" href=\"bootstrap.min.css\">\n");
+      out.write("  <style>\n");
+      out.write("    *{\n");
+      out.write("      font-family: \"微软雅黑 Light\";\n");
+      out.write("    }\n");
+      out.write("    .fakeimg {\n");
+      out.write("      height: 300px;\n");
+      out.write("\n");
+      out.write("    }\n");
+      out.write("    /*jumbotron是超大屏幕，作为组件，增加标题大小，为页面内容增添更多的页边距*/\n");
+      out.write("    .jumbotron{\n");
+      out.write("            background-color: #66afe9 ;\n");
+      out.write("        }\n");
+      out.write("        /*container容器用来固定宽度，配合响应式布局*/\n");
+      out.write("        .container{\n");
+      out.write("            width: 97%;\n");
+      out.write("        }\n");
+      out.write("    </style>\n");
+      out.write("</head>\n");
+      out.write("<body class=\"container\">\n");
+      out.write("<div class=\"jumbotron text-center\" style=\"margin-bottom:0px\">\n");
+      out.write("<!--    margin-bottom设置下边距，允许为负-->\n");
+      out.write("<h1 class=\"text-left\"><strong>门诊管理系统</strong></h1>\n");
+      out.write("<p class=\"text-left text-muted\"><strong>欢迎使用</strong></p>\n");
+      out.write("<!--    text-muted效果是使文字减弱-->\n");
+      out.write("\n");
+      out.write("  <h1 class=\"text-left\"><strong></strong></h1>\n");
+      out.write("  <p class=\"text-left text-muted\"><strong></strong></p>\n");
+      out.write("  <!--    text-muted效果是使文字减弱-->\n");
+      out.write("</div>\n");
+      out.write("\n");
+      out.write("<!--这个是导航栏-->\n");
+      out.write("<nav class=\"navbar navbar-inverse\">\n");
+      out.write("  <!--    设置导航栏的主题是黑色主题-->\n");
+      out.write("  <div class=\"container-fluid\">\n");
+      out.write("    <!--      设置导航栏100%的宽度-->\n");
+      out.write("    <div class=\"navbar-header\">\n");
+      out.write("      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\n");
+      out.write("        <span class=\"icon-bar\"></span>\n");
+      out.write("        <span class=\"icon-bar\"></span>\n");
+      out.write("        <span class=\"icon-bar\"></span>\n");
+      out.write("      </button>\n");
+      out.write("      <a class=\"navbar-brand\" href=\"#\"></a>\n");
+      out.write("    </div>\n");
+      out.write("    <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\n");
+      out.write("      <ul class=\"nav navbar-nav\">\n");
+      out.write("        <li><a href=\"http://localhost:8084/men_zhen_System/HomePage.jsp\">新建处方</a></li>\n");
+      out.write("        <li class=\"active\"><a href=\"#\">药库</a></li>\n");
+      out.write("        <li><a href=\"http://localhost:8084/men_zhen_System/Patient.jsp\">病人信息查询</a></li>\n");
+      out.write("        <li><a href=\"http://localhost:8084/men_zhen_System/Chufang.jsp\">处方保存处</a></li>\n");
+      out.write("        <!--<li><a href=\"menu5.html\">药品采购</a></li>-->\n");
+      out.write("      </ul>\n");
+      out.write("    </div>\n");
+      out.write("  </div>\n");
+      out.write("</nav>\n");
+      out.write("<left><a class=\"btn btn-primary\" href=\"http://localhost:8084/men_zhen_System/yaokuchange.jsp\" role=\"button\">修改药品信息</a></left>\n");
+      out.write("\n");
+      out.write("<div>\n");
+      out.write("    <div><a class=\"btn btn-primary\" href=\"http://localhost:8084/men_zhen_System/yaokuchange.jsp\" role=\"button\">修改药品信息</a></div>\n");
+      out.write("    <div class=\"row\">\n");
+      out.write("\n");
+      out.write("    <!--        栅格系统将页面左边五份分为自信导航栏-->\n");
+      out.write("    <div class=\"col-sm-5\" >\n");
+      out.write("        \n");
+      out.write("    <form class=\"navbar-form navbar-left\" role=\"search\">\n");
+      out.write("        <div class=\"form-group\">\n");
+      out.write("            <label for=\"Position\">检索药名</label>\n");
+      out.write("            <input type=\"text\" class=\"form-control\" placeholder=\"搜索\"\n");
+      out.write("        </div>\n");
+      out.write("        <button type=\"submit\" class=\"btn btn-default\">查询</button>\n");
+      out.write("        \n");
+      out.write("    </form>\n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("       \n");
+      out.write("    </div>\n");
+      out.write("    </div>\n");
+      out.write("    </div>\n");
+      out.write("</div>\n");
+      out.write("        \n");
+      out.write("    <!--        栅格系统右边7格分为图片展示栏-->\n");
+      out.write("    <div class=\"col-sm-7\">\n");
+      out.write("        \n");
+      out.write("     \n");
+      out.write("     \n");
+      out.write("      </div>\n");
+      out.write("      \n");
+      out.write("    </div>\n");
+      out.write("  </div>\n");
+      out.write("</div>\n");
+      out.write("\n");
+      out.write("<div class =\"container\">\n");
+      out.write("    <table class=\"table table-bordered table-hover\">\n");
+      out.write("        <thead>\n");
+      out.write("            <tr>\n");
+      out.write("                <th>药品</th>\n");
+      out.write("                <th>药品简称</th>\n");
+      out.write("                <th>药品余量(g)</th>\n");
+      out.write("                <th>成本价（元）</th>\n");
+      out.write("                <th>售价（元）</th>\n");
+      out.write("                <th>生产厂家</th>\n");
+      out.write("                <th>库存预警(g)</th>\n");
+      out.write("                \n");
+      out.write("            </tr>\n");
+      out.write("        </thead>\n");
+      out.write("        <tbody>\n");
+      out.write("            <tr>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("            </tr>\n");
+      out.write("           <tr>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("                <td></td>\n");
+      out.write("            </tr>\n");
+      out.write("        </tbody>\n");
+      out.write("    </table>\n");
+      out.write("</div>\n");
+      out.write("\n");
+      out.write("<div class=\"jumbotron text-left\" style=\"margin-bottom:0\">\n");
+      out.write("\n");
+      out.write("    <p><strong>医院地址：四川省成都市国学巷37号   订购电话：028-85422114  </strong></p>\n");
+      out.write("</div>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("</body>\n");
+      out.write("</html>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
